@@ -11,21 +11,20 @@ html {
 }
 
 .todo-list {
-    height: 300px;
-    width: 200px;
-    min-width: fit-content;
-    background: #FFFF99;
+    background: #FFFF5F;
     box-shadow: 2px 2px 3px lightgrey;
+    max-height: fit-content;
+    min-height: 300px;
+    min-width: 200px;
     padding: 20px;
 }
 
 .title {
-    border-bottom: 2px black;
     color: var(--font-color);
     font-family: var(--standard-font);
     font-size: 30px;
     font-weight: bold;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .form-input {
@@ -37,9 +36,9 @@ html {
     border-radius: 0;
     border: 1px solid grey;   
     color: var(--font-color);
+    cursor: pointer;
     font-family: var(--standard-font);
     height: 40px;
-    cursor: pointer;
 }
 
 .task-list {
@@ -49,12 +48,13 @@ html {
 }
 
 .task-item { 
-    background: rgba(109, 109, 109, 0.2);
-    padding: 5px 10px;   
-    height: 40px;
-    display: flex;
     align-items: center;
+    background: rgba(109, 109, 109, 0.2);
+    display: flex;
     justify-content: space-between;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 5px 10px;   
 }
 
 .task-text {
