@@ -1,0 +1,83 @@
+html {
+    --font-color: #1D1D00;
+    --standard-font: 'Montserrat';
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-list {
+    height: 300px;
+    width: 200px;
+    min-width: fit-content;
+    background: #FFFF99;
+    box-shadow: 2px 2px 3px lightgrey;
+    padding: 20px;
+}
+
+.title {
+    border-bottom: 2px black;
+    color: var(--font-color);
+    font-family: var(--standard-font);
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.form-input {
+    border: none;
+    height: 40px;
+}
+
+.form-button {
+    border-radius: 0;
+    border: 1px solid grey;   
+    color: var(--font-color);
+    font-family: var(--standard-font);
+    height: 40px;
+    cursor: pointer;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;   
+    padding: 10px 0; 
+}
+
+.task-item { 
+    background: rgba(109, 109, 109, 0.2);
+    padding: 5px 10px;   
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-text {
+    font-family: var(--standard-font);    
+    flex-grow: 2;
+}
+
+.task-button {
+    font-family: var(--standard-font);
+    margin-right: 2px;
+}
+
+.task-check {
+    text-decoration: line-through;
+}
+
+.fas {
+    color: #1D1D00;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.fas:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
