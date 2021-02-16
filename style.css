@@ -3,6 +3,10 @@ html {
     --standard-font: 'Montserrat';
 }
 
+strong {
+    font-weight: bold;
+}
+
 .app {
     display: flex;
     justify-content: center;
@@ -40,6 +44,7 @@ html {
     font-family: var(--standard-font);
     height: 40px;
 }
+
 
 .task-list {
     display: flex;

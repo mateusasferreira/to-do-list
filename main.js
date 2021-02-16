@@ -5,11 +5,14 @@ formButton.addEventListener('click', (event) => {
     event.preventDefault();
     const input = document.querySelector('[data-form-input]');
     const inputValue = input.value; 
+    const calendar = document.querySelector('[data-form-date');
+    const date = moment(calendar.value).format('ddd, hh:mm a');
+    console.log(date)
     const taskList = document.querySelector('[data-task-list]')
     const task = document.createElement('li')
     task.classList.add('task-item'); 
     input.value = '';        
-    const taskContent = `<span class="task-text">${inputValue}</span>`
+    const taskContent = `<span class="task-text">${date} ${inputValue}</span>`
     task.innerHTML = taskContent;
     task.appendChild(CheckButton()); 
     task.appendChild(DeleteButton());
